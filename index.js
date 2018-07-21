@@ -39,7 +39,7 @@ function removeFromCart(item) {
   // write your code here
 for(var i = 0; i < cart.length ; i++){
 if(item === cart[i]['itemname']){
-  cart.splice(i,1);
+  cart.splice(i,0);
 return cart
 }
 else{
