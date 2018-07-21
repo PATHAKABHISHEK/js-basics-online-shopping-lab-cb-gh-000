@@ -1,5 +1,6 @@
 var cart = [];
 var sum = 0 ;
+var result = "In your cart, "
 function getCart() {
  return cart;
 }
@@ -18,6 +19,10 @@ return item+" has been added to your cart."
 
 function viewCart() {
   // write your code here
+for(var i = 0; i < cart.length ; i++){
+  result  = result + cart
+}
+
 }
 
 function total() {
@@ -31,6 +36,8 @@ return sum;
 
 function removeFromCart(item) {
   // write your code here
+
+
 }
 
 function placeOrder(cardNumber) {
