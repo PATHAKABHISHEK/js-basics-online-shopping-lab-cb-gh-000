@@ -28,8 +28,8 @@ return result
 
 function total() {
   // write your code here
-for(var i = 0; i < cart.length; i++){
-  sum  = sum + cart[i]['itemprice']
+for(var j = 0; j < cart.length; j++){
+  sum  = sum + cart[j]['itemprice']
 }
 return sum;
 }
