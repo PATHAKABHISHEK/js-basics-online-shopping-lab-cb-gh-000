@@ -29,8 +29,7 @@ return result
 function total() {
   // write your code here
 for(var i = 0; i < cart.length; i++){
-  sum += cart[i]['itemprice']
-
+  sum  = sum + cart[i]['itemprice']
 }
 return sum;
 }
@@ -52,4 +51,6 @@ return "That item is not in your cart."
 
 function placeOrder(cardNumber) {
   // write your code here
+
+
 }
