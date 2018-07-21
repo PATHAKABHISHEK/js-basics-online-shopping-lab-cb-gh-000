@@ -42,9 +42,7 @@ if(item === cart[i]['itemname']){
   cart.splice(i,1);
 return cart
 }
-else{
-  continue
-}
+
 
 }
 
