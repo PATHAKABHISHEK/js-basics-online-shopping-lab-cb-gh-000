@@ -1,6 +1,6 @@
 var cart = [];
 var sum = 0 ;
-var result = "In your cart, "
+var result = "In your cart, you have "
 function getCart() {
  return cart;
 }
@@ -19,10 +19,11 @@ return item+" has been added to your cart."
 
 function viewCart() {
   // write your code here
-for(var i = 0; i < cart.length ; i++){
-  result  = result + cart
+for(var i = 0; i < cart.length-1; i++){
+  result  = `${result}${cart[i]['itemname']} at ${cart[i][itemprice]}. `
 }
-
+result = `${result}${cart[cart.length-1]['itemname']} at ${cart[cart.length][itemprice]}.`
+return result
 }
 
 function total() {
